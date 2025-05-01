@@ -45,7 +45,7 @@
 <!-- 04 | AGI ANIMATION -->
 ## 🎬 AGI Animation
 <p align="center">
-  <img src="assets/agi_take_over_the_world.gif" alt="TRY TO TAKE OVER THE WORLD" width="650">
+  ![TRY TO TAKE OVER THE WORLD](assets/agi_take_over_the_world.gif)
 </p>
 👉 [https://luoolu.github.io/luoolu/]
 

@@ -1,9 +1,13 @@
 <!-- 01 | HEADER & BANNER -->
-<p align="center">
-  <img src="assets/01_digital_world_banner.gif" alt="01 Digital World" width="100%">
-</p>
+<pre align="center">
+ _         ___     ___      _         ___  
+| |       / _ \   / _ \    | |       / _ \ 
+| |      | | | | | | | |   | |      | | | |
+| |      | | | | | | | |   | |      | | | |
+| |____  | |_| | | |_| |   | |____  | |_| |
+|______|  \___/   \___/    |______|  \___/ 
+</pre>
 
-<h1 align="center">👋 Hi, I’m <strong>LOOLO</strong></h1>
 <h3 align="center"><code>Algorithm Architect | AGI Explorer | CV • RL • Time-Series Expert</code></h3>
 
 <p align="center">
@@ -18,17 +22,19 @@
   </a>
 </p>
 
+---
+
 <!-- 02 | INTERACTIVE HUB -->
 ## 🌐 01 数字世界 — Interactive Hub
 > 一站式体验 AGI 与前沿算法  
 > **Click ▶ to explore, fork or star!**
 
-| Demo | Domain | Entry |
-|------|--------|-------|
-| 🖥️ Machine Vision | DinoV2 + Mask2Former Thin-Section Segmentation | [Open](https://luoolu.github.io/#cv) |
-| 📈 Time-Series | KL-8 Lottery Forecast (AutoGluon v1.2 + RL v44) | [Open](https://luoolu.github.io/#ts) |
-| 🧠 Reinforcement Learning | PPO / QR-DQN / Meta-Ensemble for Number-Picking | [Open](https://luoolu.github.io/#rl) |
-| 🌌 **AGI** Playground | Multi-Agent LLM + Vision LLM Co-Reasoning | **[Try AGI Animation ⬇](#agi-animation)** |
+| Demo                       | Domain                                              | Entry                                      |
+|----------------------------|-----------------------------------------------------|--------------------------------------------|
+| 🖥️ Machine Vision          | DinoV2 + Mask2Former Thin-Section Segmentation      | [Open](https://luoolu.github.io/#cv)       |
+| 📈 Time-Series             | KL-8 Lottery Forecast (AutoGluon v1.2 + RL v44)     | [Open](https://luoolu.github.io/#ts)       |
+| 🧠 Reinforcement Learning  | PPO / QR-DQN / Meta-Ensemble for Number-Picking     | [Open](https://luoolu.github.io/#rl)       |
+| 🌌 **AGI** Playground      | Multi-Agent LLM + Vision LLM Co-Reasoning           | **[Try AGI Animation ⬇](#agi-animation)**  |
 
 ---
 
@@ -45,8 +51,9 @@
 <!-- 04 | AGI ANIMATION -->
 ## 🎬 AGI Animation
 <p align="center">
-  ![TRY TO TAKE OVER THE WORLD](assets/agi_take_over_the_world.gif)
+  <img src="assets/agi_take_over_the_world.gif" alt="TRY TO TAKE OVER THE WORLD" />
 </p>
+
 👉 [https://luoolu.github.io/luoolu/]
 
 > **TRY TO TAKE OVER THE WORLD** — 从灵感到落地，见证 AGI 的 🔥 **spark**.
@@ -71,11 +78,11 @@
 <!-- 06 | METRICS -->
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=luoolu&show_icons=true&include_all_commits=true&count_private=true" width="47%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=luoolu" width="47%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=luoolu&show_icons=true&include_all_commits=true&count_private=true" width="47%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=luoolu" width="47%" />
 </p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luoolu&layout=compact&exclude_repo=luoolu.github.io" width="47%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luoolu&layout=compact&exclude_repo=luoolu.github.io" width="47%" />
 </p>
 
 ---
@@ -84,7 +91,7 @@
 ## 📫 连接我
 - **Email**：<code>luolu.dev [at] example.com</code>  
 - **LinkedIn**：[linkedin.com/in/luoolu](https://linkedin.com/in/luoolu)  
-- **WeChat**：`LooLo_AI`  
+- **WeChat**：<code>LooLo_AI</code>  
 - **Twitter / X**：[@LooLo_AI](https://twitter.com/LooLo_AI)
 
 ---

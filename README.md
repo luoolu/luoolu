@@ -1,11 +1,11 @@
 <!-- 01 | HEADER & BANNER -->
 <pre align="center">
- _         ___     ___      _         ___  
-| |       / _ \   / _ \    | |       / _ \ 
-| |      | | | | | | | |   | |      | | | |
-| |      | | | | | | | |   | |      | | | |
-| |____  | |_| | | |_| |   | |____  | |_| |
-|______|  \___/   \___/    |______|  \___/ 
+#    #####  #####  #    #####
+#    #   #  #   #  #    #   #
+#    #   #  #   #  #    #   #
+#    #   #  #   #  #    #   #
+#    #   #  #   #  #    #   #
+##### ##### ##### ##### #####
 </pre>
 
 <h3 align="center"><code>Algorithm Architect | AGI Explorer | CV • RL • Time-Series Expert</code></h3>
@@ -25,16 +25,16 @@
 ---
 
 <!-- 02 | INTERACTIVE HUB -->
-## 🌐 01 数字世界 — Interactive Hub
+## 🌐 01 数字世界 — Interactive Hub  
 > 一站式体验 AGI 与前沿算法  
 > **Click ▶ to explore, fork or star!**
 
-| Demo                       | Domain                                              | Entry                                      |
-|----------------------------|-----------------------------------------------------|--------------------------------------------|
-| 🖥️ Machine Vision          | DinoV2 + Mask2Former Thin-Section Segmentation      | [Open](https://luoolu.github.io/#cv)       |
-| 📈 Time-Series             | KL-8 Lottery Forecast (AutoGluon v1.2 + RL v44)     | [Open](https://luoolu.github.io/#ts)       |
-| 🧠 Reinforcement Learning  | PPO / QR-DQN / Meta-Ensemble for Number-Picking     | [Open](https://luoolu.github.io/#rl)       |
-| 🌌 **AGI** Playground      | Multi-Agent LLM + Vision LLM Co-Reasoning           | **[Try AGI Animation ⬇](#agi-animation)**  |
+| Demo                       | Domain                                              | Entry                                     |
+|----------------------------|-----------------------------------------------------|-------------------------------------------|
+| 🖥️ Machine Vision          | DinoV2 + Mask2Former Thin-Section Segmentation      | [Open](https://luoolu.github.io/#cv)      |
+| 📈 Time-Series             | KL-8 Lottery Forecast (AutoGluon v1.2 + RL v44)     | [Open](https://luoolu.github.io/#ts)      |
+| 🧠 Reinforcement Learning  | PPO / QR-DQN / Meta-Ensemble for Number-Picking     | [Open](https://luoolu.github.io/#rl)      |
+| 🌌 **AGI** Playground      | Multi-Agent LLM + Vision LLM Co-Reasoning           | **[Try AGI Animation ⬇](#agi-animation)** |
 
 ---
 

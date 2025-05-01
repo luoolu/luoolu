@@ -7,7 +7,7 @@
 
 ---
 
-## 🚀 专业方向 Demo  
+## 🚀 专业方向 
 - **机器视觉** (Machine Vision)  
 - **时间序列** (Time Series)  
 - **强化学习** (Reinforcement Learning)  
@@ -23,7 +23,7 @@
 
 ## 💻 技能 & 常用语言  
 - **Python**  
-- JavaScript / HTML / CSS  
+- C / C++ / Matlab / Android / JavaScript / HTML / CSS  
 - Git & GitHub Pages  
 - …and more
 

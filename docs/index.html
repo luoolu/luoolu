@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>LOOLO 的 01 数字世界</title>
+  <!-- p5.js 用于顶部动画 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
+  <style>
+    /* 全局重置 */
+    body, html { margin:0; padding:0; overflow-x:hidden; background:#000; color:#0f0; font-family:monospace; }
+    #motto { position:fixed; top:10px; width:100%; text-align:center; font-size:1.2em; letter-spacing:2px; }
+    #sketch-holder { position:relative; }
+    .section { padding: 40px 0; text-align:center; }
+    .section h2 { margin-bottom:20px; color:#0f0; }
+    canvas { display:block; margin:0 auto; background:#000; }
+  </style>
+</head>
+<body>
+  <!-- 座右铭 -->
+  <div id="motto">TRY TO TAKE OVER THE WORLD</div>
+  <!-- 顶部 01 数字世界 动画容器 -->
+  <div id="sketch-holder"></div>
+
+  <!-- 各方向 Demo -->
+  <div class="section" id="vision">
+    <h2>机器视觉 Demo</h2>
+    <canvas id="visionCanvas" width="600" height="200"></canvas>
+  </div>
+
+  <div class="section" id="timeseries">
+    <h2>时间序列 Demo</h2>
+    <canvas id="tsCanvas" width="600" height="200"></canvas>
+  </div>
+
+  <div class="section" id="rl">
+    <h2>强化学习 Demo</h2>
+    <canvas id="rlCanvas" width="600" height="200"></canvas>
+  </div>
+
+  <div class="section" id="foundation">
+    <h2>基础模型 Demo</h2>
+    <canvas id="fmCanvas" width="600" height="200"></canvas>
+  </div>
+
+  <div class="section" id="agi">
+    <h2>AGI 开发者 Demo</h2>
+    <canvas id="agiCanvas" width="600" height="200"></canvas>
+  </div>
+
+  <script>
+    // —— 1. p5.js 顶部“01 数字世界”动画 ——
+    let angle = 0;
+    new p5(p => {
+      p.setup = () => {
+        let c = p.createCanvas(p.windowWidth, p.windowHeight / 2);
+        c.parent('sketch-holder');
+        p.textAlign(p.CENTER, p.CENTER);
+        p.textSize(64);
+      };
+      p.draw = () => {
+        p.background(0);
+        p.fill(0,255,0);
+        p.text('01 数字 世界', p.width/2, p.height/2 + Math.sin(angle)*20);
+        angle += 0.05;
+      };
+      p.windowResized = () => p.resizeCanvas(p.windowWidth, p.windowHeight/2);
+    });
+
+    // —— 2. 机器视觉：扫描方框 —— 
+    (()=>{
+      const c = document.getElementById('visionCanvas');
+      const ctx = c.getContext('2d');
+      let x = -100;
+      function loop(){
+        ctx.fillStyle = '#000'; ctx.fillRect(0,0,c.width,c.height);
+        ctx.strokeStyle = '#0f0'; ctx.strokeRect(x,50,100,100);
+        x = (x + 3) % (c.width + 200) - 100;
+        requestAnimationFrame(loop);
+      }
+      loop();
+    })();
+
+    // —— 3. 时间序列：动态正弦波 —— 
+    (()=>{
+      const c = document.getElementById('tsCanvas'), ctx = c.getContext('2d');
+      let t = 0;
+      function loop(){
+        ctx.fillStyle='#000'; ctx.fillRect(0,0,c.width,c.height);
+        ctx.beginPath(); ctx.strokeStyle='#0f0';
+        for(let i=0;i<c.width;i++){
+          let y = c.height/2 + Math.sin((i+t)*0.05)*50;
+          i===0?ctx.moveTo(i,y):ctx.lineTo(i,y);
+        }
+        ctx.stroke(); t += 1;
+        requestAnimationFrame(loop);
+      }
+      loop();
+    })();
+
+    // —— 4. 强化学习：网格中随机漫步智能体 —— 
+    (()=>{
+      const c = document.getElementById('rlCanvas'), ctx = c.getContext('2d');
+      const G=10, S=c.width/G; let ax=5, ay=5;
+      function loop(){
+        ctx.fillStyle='#000'; ctx.fillRect(0,0,c.width,c.height);
+        ctx.strokeStyle='#0f0';
+        for(let i=0;i<=G;i++){
+          ctx.beginPath(); ctx.moveTo(i*S,0); ctx.lineTo(i*S,c.height); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(0,i*S); ctx.lineTo(c.width,i*S); ctx.stroke();
+        }
+        ctx.fillStyle='#f00';
+        ctx.fillRect(ax*S+5, ay*S+5, S-10, S-10);
+        // 随机移动
+        const dir = Math.floor(Math.random()*4);
+        if(dir===0) ax=(ax+1)%G;
+        if(dir===1) ay=(ay+1)%G;
+        if(dir===2) ax=(ax+G-1)%G;
+        if(dir===3) ay=(ay+G-1)%G;
+        setTimeout(loop, 200);
+      }
+      loop();
+    })();
+
+    // —— 5. 基础模型：节点连线 —— 
+    (()=>{
+      const c = document.getElementById('fmCanvas'), ctx = c.getContext('2d');
+      const N=40, pts=[];
+      for(let i=0;i<N;i++) pts.push({ x:Math.random()*c.width, y:Math.random()*c.height });
+      function loop(){
+        ctx.fillStyle='#000'; ctx.fillRect(0,0,c.width,c.height);
+        ctx.strokeStyle='rgba(0,255,0,0.2)';
+        pts.forEach(a=>pts.forEach(b=>{
+          if(Math.hypot(a.x-b.x,a.y-b.y)<100){
+            ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+          }
+        }));
+        ctx.fillStyle='#0f0';
+        pts.forEach(p=>{ ctx.beginPath(); ctx.arc(p.x,p.y,3,0,2*Math.PI); ctx.fill(); });
+        requestAnimationFrame(loop);
+      }
+      loop();
+    })();
+
+    // —— 6. AGI 开发者：简易旋转地球 —— 
+    (()=>{
+      const c = document.getElementById('agiCanvas'), ctx = c.getContext('2d');
+      let r=0;
+      function loop(){
+        ctx.fillStyle='#000'; ctx.fillRect(0,0,c.width,c.height);
+        ctx.save(); ctx.translate(c.width/2,c.height/2); ctx.rotate(r);
+        ctx.strokeStyle='#0f0'; ctx.beginPath(); ctx.arc(0,0,60,0,2*Math.PI); ctx.stroke();
+        for(let i=0;i<8;i++){
+          ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(80,0); ctx.stroke();
+          ctx.rotate(Math.PI/4);
+        }
+        ctx.restore();
+        r += 0.01;
+        requestAnimationFrame(loop);
+      }
+      loop();
+    })();
+  </script>
+</body>
+</html>

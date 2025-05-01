@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>01 数字世界 | LOOLO</title>
+  <style>
+    /* reset */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif; background:#000; color:#fff; overflow-x:hidden}
+    /* background binary rain */
+    .rain span{
+      position:absolute;
+      top:-100vh;
+      color:#0f0;
+      font-family: 'Courier New', monospace;
+      opacity:0;
+      animation: fall 10s linear infinite;
+    }
+    @keyframes fall{
+      0%{transform:translateY(-100vh);opacity:0}
+      10%{opacity:1}
+      90%{opacity:1}
+      100%{transform:translateY(100vh);opacity:0}
+    }
+    /* hero */
+    #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;text-align:center;z-index:1}
+    #hero h1{font-size:clamp(2rem,10vw,6rem);background:linear-gradient(90deg,#39f,#9f3);-webkit-background-clip:text;color:transparent;animation:bgShift 6s linear infinite}
+    #hero h2{margin-top:1rem;font-size:1.5rem;letter-spacing:2px;color:#ccc}
+    @keyframes bgShift{
+      0%{background-position:0%}
+      100%{background-position:100%}
+    }
+    /* buttons */
+    .btn-group{margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap}
+    .btn{padding:0.75rem 1.5rem;border:2px solid #39f;border-radius:8px;color:#39f; text-decoration:none;font-weight:600;transition:all .3s}
+    .btn:hover{background:#39f;color:#000}
+    footer{padding:2rem 0;text-align:center;font-size:0.875rem;color:#777}
+  </style>
+</head>
+<body>
+  <!-- background rain -->
+  <div class="rain" aria-hidden="true"></div>
+
+  <section id="hero">
+    <h1>01 数字世界</h1>
+    <h2>TRY TO TAKE OVER THE WORLD</h2>
+
+    <div class="btn-group">
+      <a class="btn" href="https://luoolu.github.io/#cv">Machine Vision Demo</a>
+      <a class="btn" href="https://luoolu.github.io/#ts">Time‑Series Forecast</a>
+      <a class="btn" href="https://luoolu.github.io/#rl">Reinforcement Learning</a>
+      <a class="btn" href="#about">About</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 LOOLO · GitHub Pages<br>
+    Built with pure HTML & CSS Animation.
+  </footer>
+
+  <script>
+    /* create binary rain */
+    const rain = document.querySelector('.rain');
+    const columns = Math.floor(window.innerWidth / 20);
+    for(let i=0;i<columns*5;i++){
+      const span=document.createElement('span');
+      span.textContent=Math.random()>0.5?'0':'1';
+      span.style.left=Math.random()*100+'vw';
+      span.style.animationDelay=Math.random()*-10+'s';
+      span.style.fontSize=(Math.random()*1.5+0.5)+'rem';
+      rain.appendChild(span);
+    }
+    // refresh characters occasionally
+    setInterval(()=>{ [...rain.children].forEach(c=>c.textContent=Math.random()>0.5?'0':'1'); },200);
+  </script>
+</body>
+</html>

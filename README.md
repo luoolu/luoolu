@@ -47,7 +47,7 @@
 <p align="center">
   <img src="assets/agi_take_over_the_world.gif" alt="TRY TO TAKE OVER THE WORLD" width="650">
 </p>
-👉 [https://luoolu.github.io/luoolu/](https://luoolu.github.io/luoolu/)
+👉 [https://luoolu.github.io/luoolu/]
 
 > **TRY TO TAKE OVER THE WORLD** — 从灵感到落地，见证 AGI 的 🔥 **spark**.
 

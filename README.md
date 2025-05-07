@@ -28,38 +28,38 @@
 ---
 
 <!-- 02 | INTERACTIVE HUB -->
-## 🌐 01 数字世界 — Interactive Hub  
-> 一站式体验 AGI 与前沿算法  
-> **Click ▶ to explore, fork or star!**
+## 🌐 Interactive Hub — 01 Digital World
+> A curated collection of demos showcasing AGI and cutting-edge algorithms.
+> **Click ▶ to explore, fork, or star!**
 
-| Demo                       | Domain                                              | Entry                                     |
-|----------------------------|-----------------------------------------------------|-------------------------------------------|
-| 🖥️ Machine Vision          | DinoV2 + Mask2Former Thin-Section Segmentation      | [Open](https://luoolu.github.io/#cv)      |
-| 📈 Time-Series             | KL-8 Lottery Forecast (AutoGluon v1.2 + RL v44)     | [Open](https://luoolu.github.io/#ts)      |
-| 🧠 Reinforcement Learning  | PPO / QR-DQN / Meta-Ensemble for Number-Picking     | [Open](https://luoolu.github.io/#rl)      |
-| 🌌 **AGI** Playground      | Multi-Agent LLM + Vision LLM Co-Reasoning           | **[Try AGI Animation ⬇](#agi-animation)** |
+| Demo                       | Domain                                                       | Entry                                                     |
+|----------------------------|--------------------------------------------------------------|-----------------------------------------------------------|
+| 🖥️ Machine Vision          | DinoV2 + Mask2Former Thin-Section Segmentation               | [Open](https://luoolu.github.io/#cv)                      |
+| 📈 Time-Series             | KL-8 Sequence Prediction (AutoGluon v1.2 + RL v44)           | [Open](https://luoolu.github.io/#ts)                      |
+| 🧠 Reinforcement Learning  | RL for Sequential Decision-Making (PPO/QR-DQN/Meta-Ensemble) | [Open](https://luoolu.github.io/#rl)                      |
+| 🌌 **AGI** Playground      | Multi-Agent LLM + Vision LLM Co-Reasoning                    | **[View Concept ⬇](#agi-animation-showcase)**             |
 
 ---
 
 <!-- 03 | EXPERTISE -->
-## 🚀 专业方向 & 研究兴趣
-- **Computer Vision**：大规模预训练、细粒度分割、3D Reconstruction  
-- **Time-Series Forecasting**：AutoML、Probabilistic & Point Forecast、HPO  
-- **Reinforcement Learning**：Model-based RL、Offline RL、Multi-Objective RL  
-- **Foundation Models**：Vision LLM、TimesFM、FalconCore、Diffusion Models  
-- **AGI**：Agent Frameworks、Tool Use & Planning、Self-Improving Systems  
+## 🚀 Expertise & Research Interests
+- **Computer Vision**: Large-Scale Pre-training, Fine-Grained Segmentation, 3D Reconstruction
+- **Time-Series Forecasting**: AutoML, Probabilistic & Point Forecasting, Hyperparameter Optimization (HPO)
+- **Reinforcement Learning**: Model-Based RL, Offline RL, Multi-Objective RL
+- **Foundation Models**: Vision LLMs, TimesFM, FalconCore, Diffusion Models
+- **Artificial General Intelligence (AGI)**: Agent Frameworks, Tool Use & Planning, Self-Improving Systems
 
 ---
 
 <!-- 04 | AGI ANIMATION -->
-## 🎬 AGI Animation
-<p align="center">
-  <img src="assets/agi_take_over_the_world.gif" alt="TRY TO TAKE OVER THE WORLD" />
+## 🎬 AGI Animation Showcase
+<p align="center" id="agi-animation-showcase">
+  <img src="assets/agi_take_over_the_world.gif" alt="Visualizing the Path to AGI" />
 </p>
 
-👉 [https://luoolu.github.io/luoolu/]
+👉 [Explore AGI Concepts & Demos: luoolu.github.io/luoolu/](https://luoolu.github.io/luoolu/)
 
-> **TRY TO TAKE OVER THE WORLD** — 从灵感到落地，见证 AGI 的 🔥 **spark**.
+> **Visualizing AGI's Emergence** — From conceptual sparks to intelligent systems, witnessing the 🔥 **evolution**.
 
 ---
 
@@ -91,14 +91,14 @@
 ---
 
 <!-- 07 | CONTACT -->
-## 📫 连接我
-- **Email**：<code>luolu.dev [at] example.com</code>  
-- **LinkedIn**：[linkedin.com/in/luoolu](https://linkedin.com/in/luoolu)  
-- **WeChat**：<code>LooLo_AI</code>  
-- **Twitter / X**：[@LooLo_AI](https://twitter.com/LooLo_AI)
+## 📫 Connect With Me
+- **Email**: `luolu.dev [at] example.com`
+- **LinkedIn**: [linkedin.com/in/luoolu](https://linkedin.com/in/luoolu)
+- **WeChat**: `LooLo_AI` <!-- Kept as is, assuming it's a relevant contact method for your audience -->
+- **Twitter / X**: [@LooLo_AI](https://twitter.com/LooLo_AI)
 
 ---
 
 <p align="center">
-  <em>“01 数字世界” —— 探索、分享、共建未来 AI 生态.</em>
+  <em>“01 Digital World” — Exploring, sharing, and co-building the future AI ecosystem.</em>
 </p>

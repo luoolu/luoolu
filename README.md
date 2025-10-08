@@ -10,6 +10,11 @@
                                            
 
 </pre>
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=900&vCenter=true&random=false&width=520&lines=Try+to+take+over+the+world!" alt="Typing SVG" />
+  </a>
+</div>
 
 <h3 align="center"><code>Algorithm Architect | AGI Explorer | CV • RL • Time-Series Expert</code></h3>
 
